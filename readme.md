@@ -7,14 +7,15 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About User Managment
+## About Ecomm Machine Test
 
 To run application user below instruction.
  - Rename .env.example file to .env file
- - Create Database - ums
+ - Create Database - ecomm
  - Run command - php artisan migrate
  - Run command - php artisan db:seed --class=UsersTableSeeder
- - Run command - php artisan db:seed --class=AdminsTableSeeder
+ - Run command - php artisan db:seed --class=ProductTableSeeder
+ - Run command - php artisan storage:link
  - Run command - php artisan serve
 
 ## Credentials
@@ -27,31 +28,13 @@ password - user@123
 username - rahul@gmail.com
 password - user@123
 
-- Disable Status - 
-username - amol@gmail.com
-password - user@123
-
-username - james@gmail.com
-password - user@123
-
-Admin credential 
-- Admin - 
-username - johnad@gmail.com
-password - admin@123
-
 ## Points Covered
 Below points are covered in this application
 
-- Login
-- Authentication of user
-- CRUD on Users
-- Middleware (to check user status)
-CheckStatus middleware to check the status of users.
-
-- Request Validation
-StoreUser and UpdateUser Validation.
-
-- For listing of users use DataTable js package in which you must load data using ajax.
+- Create table products and add the columns - id, product_name, product_price, product_desccription, product_image(save multiple images).
+- Create add/edit/list/delete product form with the above-mentioned field and image upload should be multiple. (do not refresh the page)
+- Use Jquery, ajax for all operations you perform for listing, use data tables or bootstrap datatable, or something like that.
+- Use LAravel, Jquery, ajax, and Bootstrap
 
 ## License
 
